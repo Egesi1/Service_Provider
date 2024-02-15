@@ -1,0 +1,91 @@
+2024-02-12 18:36:27.870  INFO ${30176} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-12 18:36:27.881  INFO ${30176} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 21.0.2+13-58
+2024-02-12 18:36:28.016  INFO ${30176} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-12 18:36:28.037  INFO ${30176} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@71984c3{/,null,AVAILABLE}
+2024-02-12 18:36:28.148  INFO ${30176} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@45815ffc{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-12 18:36:28.166  INFO ${30176} [           main] o0.e0.j0.s0.Server                      : Started Server@3bd418e4{STARTING}[11.0.19,sto=0] @1521ms
+2024-02-12 18:36:28.166  INFO ${30176} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-12 18:36:28.169  INFO ${30176} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 408ms \o/
+2024-02-12 18:36:28.179  INFO ${30176} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-12 18:36:28.204  INFO ${30176} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-12 18:36:56.322  INFO ${30176} [erThreadPool-37] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-15 21:20:13.033  INFO ${6884} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-15 21:20:13.047  INFO ${6884} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 20.0.2.1+10-FR
+2024-02-15 21:20:13.237  INFO ${6884} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-15 21:20:13.293  INFO ${6884} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@878452d{/,null,AVAILABLE}
+2024-02-15 21:20:13.494  INFO ${6884} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@2072acb2{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-15 21:20:13.503  INFO ${6884} [           main] o0.e0.j0.s0.Server                      : Started Server@319bc845{STARTING}[11.0.19,sto=0] @2950ms
+2024-02-15 21:20:13.504  INFO ${6884} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-15 21:20:13.509  INFO ${6884} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 683ms \o/
+2024-02-15 21:20:13.525  INFO ${6884} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-15 21:20:13.562  INFO ${6884} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-15 21:22:42.404  INFO ${1940} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-15 21:22:42.429  INFO ${1940} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 17.0.9+7-b1087.7
+2024-02-15 21:22:42.658  INFO ${1940} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-15 21:22:42.704  INFO ${1940} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@60094a13{/,null,AVAILABLE}
+2024-02-15 21:22:42.948  INFO ${1940} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@5b64c4b7{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-15 21:22:42.953  INFO ${1940} [           main] o0.e0.j0.s0.Server                      : Started Server@18245eb0{STARTING}[11.0.19,sto=0] @3475ms
+2024-02-15 21:22:42.955  INFO ${1940} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-15 21:22:42.959  INFO ${1940} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 871ms \o/
+2024-02-15 21:22:42.971  INFO ${1940} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-15 21:22:43.010  INFO ${1940} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-15 21:45:40.418  INFO ${16272} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-15 21:45:40.435  INFO ${16272} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 11.0.22+7-LTS
+2024-02-15 21:45:40.614  INFO ${16272} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-15 21:45:40.659  INFO ${16272} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@677dbd89{/,null,AVAILABLE}
+2024-02-15 21:45:40.882  INFO ${16272} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@2b491fee{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-15 21:45:40.891  INFO ${16272} [           main] o0.e0.j0.s0.Server                      : Started Server@569bf9eb{STARTING}[11.0.19,sto=0] @3729ms
+2024-02-15 21:45:40.892  INFO ${16272} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-15 21:45:40.897  INFO ${16272} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 632ms \o/
+2024-02-15 21:45:40.917  INFO ${16272} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-15 21:45:40.940  INFO ${16272} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-15 11:52:18.227  INFO ${77608} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-15 11:52:18.238  INFO ${77608} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 20.0.2.1+10-FR
+2024-02-15 11:52:18.298  INFO ${77608} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-15 11:52:18.309  INFO ${77608} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@1c55f277{/,null,AVAILABLE}
+2024-02-15 11:52:18.507  INFO ${77608} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@3e821657{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-15 11:52:18.509  INFO ${77608} [           main] o0.e0.j0.s0.Server                      : Started Server@35390ee3{STARTING}[11.0.19,sto=0] @1231ms
+2024-02-15 11:52:18.509  INFO ${77608} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-15 11:52:18.510  INFO ${77608} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 367ms \o/
+2024-02-15 11:52:18.512  INFO ${77608} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-15 11:52:18.520  INFO ${77608} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
