@@ -1,17 +1,17 @@
 package org.example.models;
 
 public class Seller {
-    private String name;
+    private String sellerName;
 
     public Seller(String sellerName){
-        this.name = sellerName.trim();
+        this.sellerName = sellerName.trim();
     }
 
     //getter and setter
-    public String getName() {
-        return name;
+    public String getSellerName() {
+        return sellerName;
     }
-    public void setName(String name){
-        this.name = name;
+    public void setSellerName(String sellerName){
+        this.sellerName = sellerName;
     }
 }

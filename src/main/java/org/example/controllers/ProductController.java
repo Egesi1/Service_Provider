@@ -1,6 +1,7 @@
 package org.example.controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.http.Context;
@@ -9,7 +10,9 @@ import org.example.models.Seller;
 import org.example.services.ProductServices;
 import org.example.services.SellerServices;
 
+import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 public class ProductController {
     private final ProductServices productServices;
@@ -22,22 +25,29 @@ public class ProductController {
 
     // GET /product - get all products
     public void getAllProducts(Context ctx){
-        List<Product> products = this.productServices.getAllProducts();
-        ctx.json(products);
+        try{
+            List<Product> products = this.productServices.getAllProducts();
+            ctx.json(products);
+        }catch (SQLException error){
+            ctx.status(500);
+        }
     }
 
     // GET /product - get single product
     public void getProduct(Context ctx){
         String productId = ctx.pathParam("id");
 
-        Product product = productServices.getProduct(productId);
-        if (product == null) {
-            ctx.json(404).json("Product not found.");
-        return;
+        System.out.println(productId);
+        try {
+            Product product = productServices.getProduct(productId);
+            if (product == null) {
+                ctx.status(404).json("Product not found.");
+                return;
+            }
+            ctx.json(product);
+        }catch (SQLException e){
+            ctx.status(500);
         }
-
-        ctx.json(product);
-
     }
 
     // POST /product - create a new product
@@ -94,8 +104,7 @@ public class ProductController {
             }
 
             // checking if the seller exists in DB
-            Seller seller =sellerServices.getSeller(sellerName);
-            System.out.println(sellerServices.getAllSellers());
+            Seller seller =sellerServices.getSellerByName(sellerName);
 
             if (seller == null){
                 ctx.status(400).json("Seller does not exist");
@@ -105,8 +114,12 @@ public class ProductController {
            //creating product
             Product product = new Product(productId,productName,seller,productPrice);
             productServices.createProduct(product);
-            ctx.json(product);
-        }catch (IllegalArgumentException e){
+            ctx.status(201).json(product);
+        }catch (SQLException e){
+            System.out.println(e);
+            ctx.status(500);
+        }
+        catch (IllegalArgumentException e){
             ctx.status(400).json(e.getMessage());
         } catch (JsonProcessingException e) {
             ctx.status(400).json("Cannot process data.");
@@ -118,7 +131,7 @@ public class ProductController {
     // PUT /product - update a product
     public void updateProduct(Context ctx){
         String productId = ctx.pathParam("id");
-
+        try{
         // get a product
         Product product = productServices.getProductById(productId);
         // if the product with given id does not exist
@@ -130,12 +143,11 @@ public class ProductController {
         String rawText = ctx.body();
         ObjectMapper objectMapper = new ObjectMapper();
 
-        try{
             JsonNode jsonNode = objectMapper.readTree(rawText);
 
             // check if user provide seller. then is must exist already
             if (jsonNode.has("sellerName")){
-                Seller seller = sellerServices.getSeller(jsonNode.get("sellerName").asText());
+                Seller seller = sellerServices.getSellerByName(jsonNode.get("sellerName").asText());
                 if (seller == null){
                     ctx.status(404).json("Seller does not exists");
                     return;
@@ -151,12 +163,12 @@ public class ProductController {
             }
 
             // make a new object with previous data
-            Product updatedProduct = new Product(product.getId(), product.getName(),product.getSeller(),product.getProductPrice());
+            Product updatedProduct = new Product(product.getProductId(), product.getProductName(),product.getSeller(),product.getProductPrice());
 
             // if product name needs to be updated
             if (jsonNode.has("productName")){
                 String productName = jsonNode.get("productName").asText();
-                updatedProduct.setName(productName);
+                updatedProduct.setProductName(productName);
             }
 
 
@@ -168,21 +180,27 @@ public class ProductController {
 
             // if seller needs to be changed
             if (jsonNode.has("sellerName")){
-                updatedProduct.setSeller(sellerServices.getSeller(jsonNode.get("sellerName").asText()));
+                updatedProduct.setSeller(sellerServices.getSellerByName(jsonNode.get("sellerName").asText()));
             }
 
             // store the updated product
-            productServices.updateProduct(productId, updatedProduct);
+            productServices.updateProduct(updatedProduct);
             ctx.json(updatedProduct);
         }catch (JsonProcessingException e){
             ctx.status(400).json("Cannot process send data");
+        }catch (SQLException e){
+            ctx.status(500);
         }
     }
 
     // DELETE - /product/{id} - delete product
     public void deleteProduct(Context ctx){
-        String productId = ctx.pathParam("id");
-        productServices.deleteProduct(productId);
-        ctx.status(200).json("Deleted product successfully");
+        try{
+            String productId = ctx.pathParam("id");
+            productServices.deleteProduct(productId);
+            ctx.status(200).json("Deleted product successfully");
+        }catch (SQLException e){
+            ctx.status(500);
+        }
     }
 }

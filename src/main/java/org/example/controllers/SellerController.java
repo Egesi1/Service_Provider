@@ -7,6 +7,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.http.Context;
 import org.example.models.Seller;
 import org.example.services.SellerServices;
+
+import java.sql.SQLException;
 import java.util.List;
 
 public class SellerController {
@@ -18,8 +20,12 @@ public class SellerController {
 
 //    GET /seller - Get all sellers
     public void getAllSellers(Context ctx){
-        List<Seller> sellers = sellerServices.getAllSellers();
-        ctx.json(sellers);
+        try{
+            List<Seller> sellers = sellerServices.getAllSellers();
+            ctx.json(sellers);
+        }catch (SQLException error){
+            ctx.status(500);
+        }
     }
 
     // POST /seller - Create a new seller
@@ -43,12 +49,20 @@ public class SellerController {
                 return;
             }
 
+            if(sellerServices.isSellerAlreadyExists(sellerName)){
+                ctx.status(400).json("Seller already exists");
+                return;
+            }
+
             //create a new seller
             Seller seller = new Seller(sellerName);
-            sellerServices.createSeller(seller);
-            ctx.json(seller);
+            sellerServices.createSeller(seller.getSellerName());
+            ctx.status(201).json(seller);
 
-        }catch (IllegalArgumentException e){
+        }catch (SQLException e){
+            ctx.status(500);
+        }
+        catch (IllegalArgumentException e){
             ctx.status(400).json(e.getMessage());
         } catch (JsonProcessingException e) {
             ctx.status(400).json("Cannot process send data");

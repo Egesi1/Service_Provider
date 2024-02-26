@@ -2,41 +2,41 @@ package org.example.models;
 
 public class Product {
 
-    private String id, name;
-    private double price;
+    private String productId,productName;
+    private double proudctPrice;
 
     private Seller seller;
 
     public Product(String productId, String productName, Seller seller, double proudctPrice){
-        this.id = productId;
-        this.name = productName;
+        this.productId = productId;
+        this.productName = productName;
         this.seller = seller;
-        this.price = proudctPrice;
+        this.proudctPrice = proudctPrice;
     }
 
     // Getters and setters
-    public String getId() {
-        return id;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public double getProductPrice() {
-        return price;
+        return proudctPrice;
     }
 
     public void setProductPrice(double price) {
-        this.price = price;
+        this.proudctPrice = price;
     }
 
     public Seller getSeller() {
