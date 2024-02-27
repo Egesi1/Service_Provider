@@ -2736,3 +2736,81 @@
 2024-02-26 15:33:39.633  INFO ${11664} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
 2024-02-26 15:36:16.604  INFO ${11664} [erThreadPool-42] o0.e0.Main                              : Request: GET /product http://localhost:3500/product
 2024-02-26 15:36:16.885  INFO ${11664} [erThreadPool-29] o0.e0.Main                              : Request: GET /favicon.ico http://localhost:3500/favicon.ico
+2024-02-27 13:32:14.454  INFO ${38524} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Starting...
+2024-02-27 13:32:14.541  INFO ${38524} [           main] c0.z0.h0.p0.HikariPool                  : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/data user=ROOT
+2024-02-27 13:32:14.543  INFO ${38524} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Start completed.
+2024-02-27 13:32:14.640  INFO ${38524} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-27 13:32:14.643  INFO ${38524} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 11.0.22+7-LTS
+2024-02-27 13:32:14.711  INFO ${38524} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-27 13:32:14.726  INFO ${38524} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@5d10455d{/,null,AVAILABLE}
+2024-02-27 13:32:15.171  INFO ${38524} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@6bc28a83{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-27 13:32:15.173  INFO ${38524} [           main] o0.e0.j0.s0.Server                      : Started Server@7dac3fd8{STARTING}[11.0.19,sto=0] @1696ms
+2024-02-27 13:32:15.174  INFO ${38524} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-27 13:32:15.175  INFO ${38524} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 607ms \o/
+2024-02-27 13:32:15.182  INFO ${38524} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-27 13:32:15.192  INFO ${38524} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-27 13:33:23.114  INFO ${27304} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Starting...
+2024-02-27 13:33:23.204  INFO ${27304} [           main] c0.z0.h0.p0.HikariPool                  : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/data user=ROOT
+2024-02-27 13:33:23.206  INFO ${27304} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Start completed.
+2024-02-27 13:33:23.308  INFO ${27304} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-27 13:33:23.310  INFO ${27304} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 11.0.22+7-LTS
+2024-02-27 13:33:23.389  INFO ${27304} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-27 13:33:23.403  INFO ${27304} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@5d10455d{/,null,AVAILABLE}
+2024-02-27 13:33:23.837  INFO ${27304} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@6bc28a83{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-27 13:33:23.841  INFO ${27304} [           main] o0.e0.j0.s0.Server                      : Started Server@7dac3fd8{STARTING}[11.0.19,sto=0] @1583ms
+2024-02-27 13:33:23.841  INFO ${27304} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-27 13:33:23.843  INFO ${27304} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 609ms \o/
+2024-02-27 13:33:23.849  INFO ${27304} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-27 13:33:23.857  INFO ${27304} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-27 13:37:45.728  INFO ${27304} [erThreadPool-44] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 13:39:34.015  INFO ${27304} [erThreadPool-32] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 13:39:58.063  INFO ${27304} [erThreadPool-45] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 13:40:57.395  INFO ${27304} [erThreadPool-34] o0.e0.Main                              : Request: GET /seller http://localhost:3500/seller
+2024-02-27 14:34:12.069  INFO ${27304} [erThreadPool-28] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 14:34:21.132  INFO ${27304} [erThreadPool-63] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 14:34:29.572  INFO ${27304} [erThreadPool-65] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 14:34:36.584  INFO ${27304} [erThreadPool-63] o0.e0.Main                              : Request: GET /seller http://localhost:3500/seller
+2024-02-27 14:35:29.480  WARN ${27304} [erThreadPool-42] o0.e0.j0.u0.HostPort                    : Bad Authority: [<calculated when request is sent>]
+2024-02-27 14:35:45.495  WARN ${27304} [erThreadPool-45] o0.e0.j0.u0.HostPort                    : Bad Authority: [<calculated when request is sent>]
+2024-02-27 14:37:23.353  WARN ${27304} [erThreadPool-46] o0.e0.j0.u0.HostPort                    : Bad Authority: [<calculated when request is sent>]
+2024-02-27 15:44:04.674  INFO ${10688} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Starting...
+2024-02-27 15:44:04.755  INFO ${10688} [           main] c0.z0.h0.p0.HikariPool                  : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/data user=ROOT
+2024-02-27 15:44:04.757  INFO ${10688} [           main] c0.z0.h0.HikariDataSource               : HikariPool-1 - Start completed.
+2024-02-27 15:44:04.861  INFO ${10688} [           main] i0.j0.u0.JavalinLogger                  : Starting Javalin ...
+2024-02-27 15:44:04.863  INFO ${10688} [           main] o0.e0.j0.s0.Server                      : jetty-11.0.19; built: 2023-12-15T20:54:39.802Z; git: f781e475c8fa9e9c8ce18b1eaa03110d510f905f; jvm 11.0.22+7-LTS
+2024-02-27 15:44:04.929  INFO ${10688} [           main] o0.e0.j0.s0.s0.DefaultSessionIdManager  : Session workerName=node0
+2024-02-27 15:44:04.941  INFO ${10688} [           main] o0.e0.j0.s0.h0.ContextHandler           : Started o.e.j.s.ServletContextHandler@4163f1cd{/,null,AVAILABLE}
+2024-02-27 15:44:05.370  INFO ${10688} [           main] o0.e0.j0.s0.AbstractConnector           : Started ServerConnector@74f7d1d2{HTTP/1.1, (http/1.1)}{0.0.0.0:3500}
+2024-02-27 15:44:05.373  INFO ${10688} [           main] o0.e0.j0.s0.Server                      : Started Server@384fc774{STARTING}[11.0.19,sto=0] @3502ms
+2024-02-27 15:44:05.374  INFO ${10688} [           main] i0.j0.u0.JavalinLogger                  : 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+2024-02-27 15:44:05.375  INFO ${10688} [           main] i0.j0.u0.JavalinLogger                  : Javalin started in 585ms \o/
+2024-02-27 15:44:05.381  INFO ${10688} [           main] i0.j0.u0.JavalinLogger                  : Listening on http://localhost:3500/
+2024-02-27 15:44:05.390  INFO ${10688} [           main] i0.j0.u0.JavalinLogger                  : You are running Javalin 6.0.0 (released January 27, 2024).
+2024-02-27 15:44:36.924  WARN ${10688} [erThreadPool-45] o0.e0.j0.u0.HostPort                    : Bad Authority: [<calculated when request is sent>]
+2024-02-27 15:45:33.913  WARN ${10688} [erThreadPool-32] o0.e0.j0.u0.HostPort                    : Bad Authority: [<calculated when request is sent>]
+2024-02-27 15:48:10.967  INFO ${10688} [erThreadPool-34] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
+2024-02-27 15:50:52.886  INFO ${10688} [erThreadPool-28] o0.e0.Main                              : Request: POST /seller http://localhost:3500/seller
